@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>M&J Studio</title>
+
+<style type="text/css">
+
+html, body {
+	height:100%;  
+  	margin:0px;  
+}	
+
+body{
+
+}
+
+div {
+	
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    z-index: -100;
+    -webkit-mask-image: url("mask.png");
+-webkit-mask-repeat:no-repeat;
+}
+
+div{
+padding: 0px;  
+height:100%;  
+/*background:black;*/
+opacity: 1.0;
+animation:changeAnimation 10s infinite;
+}
+
+@keyframes changeAnimation
+{
+0% {background-position:0px -100px;}
+30% {background-position:20px -10px;}
+75% {background-position:-50px 50px;}
+90% {background-position:-80px 80px;}
+100% {background-position:0px -100px;}
+}
+
+</style>
+</head>
+
+<body>
+	<div></div>
+	
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+		setTimeout(function(){
+			window.location.href=window.location.href+"/confluence"; 
+		},5000)
+	};
+
+
+
+</script>
+</html>

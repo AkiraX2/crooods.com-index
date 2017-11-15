@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>M & J Studio</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body { background-color: #3F51B5; /*150A45*/; margin: 0px; padding: 0px; font-family: Roboto; color: white }
+		
+		</style>
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<script type="text/javascript" src="./jquery.min.js"></script>
+		<script type="text/javascript" src="./pixi.min.js"></script>
+		<script type="text/javascript" src="./particles.js"></script>
+		<script type="text/javascript" src="./loading.js"></script>
+		<script type="text/javascript">
+			
+			
+		</script>
+	</head>
+	<body>
+		<div class="ui ui-register">
+			<!-- Intro panel -->
+			<div class="panel panel-intro panel-front noauth">
+				<h1>M & J Studio</h1>
+				<h3 class="status-title" style="transform: translateY(20px); opacity: 0; display: inherit;">正在加载个人信息...</h3>
+			</div>
+			<!-- EOF Intro panel -->
+		</div>
+		<style type="text/css" id="style"></style>
+		<script>
+			$(function(){
+				
+		setTimeout( function() { document.getElementById("style").innerText = ".ui { display: inherit }.panel-intro {  margin-top: -200px;}" }, 20)
+		setTimeout( function() {
+			setStatusTitle("正在载入网站...")
+		}, 1000);
+		setTimeout( function() {
+			setStatusTitle("正在加载个人信息...")
+		}, 2800);
+			setTimeout( function() {
+			setStatusTitle("即将进入...")
+		}, 4200);
+		
+		
+			setTimeout( function(){
+			window.location.href=window.location.href+"/confluence";
+		}, 5000);
+		
+			});
+		</script>
+	</body>
+</html>
